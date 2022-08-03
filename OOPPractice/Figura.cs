@@ -9,22 +9,18 @@ namespace OOPPractice
     // Abstracción
     public abstract class Figura
     {
-        // Herencia
+        // Herencia y encapsulación
         public int Base { get; set; }
         public int Altura { get; set; }
-        public int Area { get; set; }
-        public int Perimetro { get; set; }
 
-        // Metodo virtual
+        // Metodo virtual, que tengan un comportamiento específico y los hijos puedan sobreescribirlo
         public virtual void Dibujar()
         {
-            Console.WriteLine($"Dibujando figura");
+            Console.WriteLine($"Dibujando figura"); // Implementación
         }
 
-        public virtual int CalcularArea()
-        {
-            return Area;
-        }
+        // Método abstracto, usamos abstract cuando queremos que los hijos sobreescriban este método
+        public abstract int CalcularArea(); // Definición / Abstracción / Firma
 
     }
 }

@@ -16,10 +16,10 @@ namespace OOPPractice
             base.Dibujar();
         }
 
-        // Polimorfismo
+        // Polimorfismo a metodo abstract
         public override int CalcularArea()
         {
-            return Area = Base * Altura;
+            return Base * Altura;
         }
 
     }
